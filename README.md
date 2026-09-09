@@ -36,42 +36,42 @@ flowchart TD
     classDef data fill:#278ea5,stroke:#fff,stroke-width:2px,color:#fff;
 
     %% Presentation Layer
-    User([Auditor / CISO]) --> UI[Next.js Frontend\naudit-console]:::frontend
+    User(["Auditor / CISO"]) --> UI["Next.js Frontend<br/>audit-console"]:::frontend
     
     %% API & FinOps Gateway
-    UI <--> Gateway[FinOps Semantic Router\nRAG Types/finops-gateway]:::finops
+    UI <--> Gateway["FinOps Semantic Router<br/>RAG Types/finops-gateway"]:::finops
     
     subgraph "Core API & Orchestration"
-        Gateway <--> API[FastAPI Backend\naudit-console]:::backend
-        API <--> CompManager[Compliance Manager\ncompliance-manager]:::backend
-        API <--> ITComp[IT Compliance\nit-compliance-manager]:::backend
+        Gateway <--> API["FastAPI Backend<br/>audit-console"]:::backend
+        API <--> CompManager["Compliance Manager<br/>compliance-manager"]:::backend
+        API <--> ITComp["IT Compliance<br/>it-compliance-manager"]:::backend
     end
 
     subgraph "AI & Intelligence Layer (LLMOps & RAG Engines)"
-        Gateway -->|Tier 1: Sovereign Local| LocalLLM[Sovereign Model 8B\ncompliance-model-tuning]:::ai
-        Gateway -->|Tier 2: Hybrid RAG| HybridRAG[Hybrid RAG Engine\nhybrid-rag]:::ai
-        Gateway -->|Tier 3: Agentic ReAct| LangGraph[LangGraph MCP Agent\nagentic RAG]:::ai
+        Gateway -->|Tier 1: Sovereign Local| LocalLLM["Sovereign Model 8B<br/>compliance-model-tuning"]:::ai
+        Gateway -->|Tier 2: Hybrid RAG| HybridRAG["Hybrid RAG Engine<br/>hybrid-rag"]:::ai
+        Gateway -->|Tier 3: Agentic ReAct| LangGraph["LangGraph MCP Agent<br/>agentic RAG"]:::ai
         
-        RAGEval[Continuous QA / Quality Gate\nRAG Types/rag-evaluation]:::ai -.->|Evaluación CI/CD| HybridRAG
-        HybridRAG & LangGraph --> Tracer[LLMOps Tracer & OTel\nshared-telemetry]:::data
+        RAGEval["Continuous QA / Quality Gate<br/>RAG Types/rag-evaluation"]:::ai -.->|Evaluación CI/CD| HybridRAG
+        HybridRAG & LangGraph --> Tracer["LLMOps Tracer & OTel<br/>shared-telemetry"]:::data
     end
 
     subgraph "Streaming & Reactive Compliance"
-        EventBus[(Redis Streams / Message Bus\nsecurity_audit_stream)]:::stream --> Consumer[Event-Driven Consumer\nworkflow-automation/event-driven-auditor]:::stream
-        Consumer --> AgentAuditor[Log Auditor Agent]:::stream
+        EventBus[("Redis Streams / Message Bus<br/>security_audit_stream")]:::stream --> Consumer["Event-Driven Consumer<br/>workflow-automation/event-driven-auditor"]:::stream
+        Consumer --> AgentAuditor["Log Auditor Agent"]:::stream
     end
 
     subgraph "Security & Vault Layer"
-        CompManager --> Bunker[Audit Bunker\naudit-bunker]:::security
+        CompManager --> Bunker["Audit Bunker<br/>audit-bunker"]:::security
         ITComp --> Bunker
         AgentAuditor -->|Alerta Inmutable| Bunker
-        SecAudit[Security Audit\nsecurity-audit]:::security --> Bunker
-        Hardening[System Hardening\nsystem-hardening]:::security
+        SecAudit["Security Audit<br/>security-audit"]:::security --> Bunker
+        Hardening["System Hardening<br/>system-hardening"]:::security
     end
 
     subgraph "Reporting & CI/CD Pipelines"
-        Bunker --> DocGen[Doc Generators\ndoc-generators]:::data
-        Pipeline[CI/CD & LLMOps Gate\n.github/workflows]:::data --> SecAudit
+        Bunker --> DocGen["Doc Generators<br/>doc-generators"]:::data
+        Pipeline["CI/CD & LLMOps Gate<br/>.github/workflows"]:::data --> SecAudit
     end
 ```
 
