@@ -1,9 +1,17 @@
-# Enterprise GRC, Regulated AI & DevSecOps Platform
+# 🏛️ Enterprise GRC, Regulated AI & DevSecOps Platform
 
-![Python 3.13](https://img.shields.io/badge/Python-3.13-blue.svg) ![Next.js 15](https://img.shields.io/badge/Next.js-15-black) ![LangGraph & MCP](https://img.shields.io/badge/LangGraph_&_MCP-Active-green) ![SLSA L3+](https://img.shields.io/badge/SLSA-L3%2B-purple) ![Post-Quantum Cryptography](https://img.shields.io/badge/Cryptography-FIPS_204-red) ![Compliance](https://img.shields.io/badge/Compliance-NIS2_|_DORA_|_ENS_Alta-orange) ![FinOps](https://img.shields.io/badge/FinOps-Semantic%20Router-brightgreen) ![LLMOps](https://img.shields.io/badge/LLMOps-Continuous%20Eval-blueviolet) ![License](https://img.shields.io/badge/License-MIT-blue)
+[![Python 3.13](https://img.shields.io/badge/Python-3.13-blue.svg)](https://www.python.org/) 
+[![Next.js 15](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/) 
+[![LangGraph & MCP](https://img.shields.io/badge/LangGraph_&_MCP-Active-green)](https://langchain-ai.github.io/langgraph/) 
+[![SLSA L3+](https://img.shields.io/badge/SLSA-L3%2B-purple)](https://slsa.dev/) 
+[![Post-Quantum Cryptography](https://img.shields.io/badge/Cryptography-FIPS_204-red)](https://csrc.nist.gov/) 
+[![Compliance](https://img.shields.io/badge/Compliance-NIS2_|_DORA_|_ENS_Alta-orange)](https://www.ccn-cert.cni.es/)
 
-## Resumen Ejecutivo (Business Value & ROI)
-Esta plataforma es una solución unificada de Gobernanza, Riesgo y Cumplimiento (GRC) diseñada para entornos altamente regulados. Combina metodologías DevSecOps, arquitectura Zero-Trust, inmutabilidad criptográfica, orquestación multi-agente basada en **LangGraph & MCP**, gobernanza de costes **AI FinOps**, observabilidad **LLMOps**, fine-tuning soberano y auditoría reactiva en streaming (**Event-Driven AI**).
+> **Esta plataforma es una solución unificada de Gobernanza, Riesgo y Cumplimiento (GRC) diseñada para entornos altamente regulados. Combina metodologías DevSecOps, arquitectura Zero-Trust, inmutabilidad criptográfica, orquestación multi-agente basada en LangGraph & MCP, gobernanza de costes AI FinOps, observabilidad LLMOps, fine-tuning soberano y auditoría reactiva en streaming.**
+
+---
+
+## 🎯 Executive Overview (Business Value & ROI)
 
 **Valor de Negocio Core:**
 - **Reducción del 85%** en tiempos de auditoría técnica y procesos de remediación.
@@ -14,7 +22,7 @@ Esta plataforma es una solución unificada de Gobernanza, Riesgo y Cumplimiento 
 
 ---
 
-## Diagrama de Arquitectura Global del Ecosistema
+## 🏗️ Diagrama de Arquitectura Global del Ecosistema
 
 ```mermaid
 flowchart TD
@@ -69,7 +77,7 @@ flowchart TD
 
 ---
 
-## Matriz del Ecosistema (Capas Arquitectónicas)
+## 📚 Matriz del Ecosistema (Capas Arquitectónicas)
 
 | Capa | Directorio | Módulo | Stack Técnico | Propósito Operativo | Cobertura Regulatoria |
 |:---|:---|:---|:---|:---|:---|
@@ -90,7 +98,7 @@ flowchart TD
 
 ---
 
-## Quickstart & Despliegue Local
+## ⚙️ Quickstart & Despliegue Local
 
 ### Requisitos Previos
 - Docker y Docker Compose v2.
