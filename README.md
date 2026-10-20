@@ -1,4 +1,4 @@
-# 🏛️ Enterprise GRC, Regulated AI & DevSecOps Platform
+# Enterprise GRC, Regulated AI & DevSecOps Platform
 
 [![Python 3.13](https://img.shields.io/badge/Python-3.13-blue.svg)](https://www.python.org/) 
 [![Next.js 15](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/) 
@@ -11,7 +11,7 @@
 
 ---
 
-## 🎯 Executive Overview (Business Value & ROI)
+## Executive Overview (Business Value & ROI)
 
 **Valor de Negocio Core:**
 - **Reducción del 85%** en tiempos de auditoría técnica y procesos de remediación.
@@ -22,7 +22,7 @@
 
 ---
 
-## 🏗️ Diagrama de Arquitectura Global del Ecosistema
+## Diagrama de Arquitectura Global del Ecosistema
 
 ```mermaid
 flowchart TD
@@ -77,7 +77,7 @@ flowchart TD
 
 ---
 
-## 📚 Matriz del Ecosistema (Capas Arquitectónicas)
+## Matriz del Ecosistema (Capas Arquitectonicas)
 
 | Capa | Directorio | Módulo | Stack Técnico | Propósito Operativo | Cobertura Regulatoria |
 |:---|:---|:---|:---|:---|:---|
@@ -98,7 +98,7 @@ flowchart TD
 
 ---
 
-## ⚙️ Quickstart & Despliegue Local
+## Quickstart & Despliegue Local
 
 ### Requisitos Previos
 - Docker y Docker Compose v2.
